@@ -1,5 +1,6 @@
 # IoU_Calculator_YOLOv5
 
+![](https://www.researchgate.net/publication/335876570/figure/fig2/AS:804291526795265@1568769451765/Intersection-over-Union-IOU-calculation-diagram.png)
 
-According to the experimental results, it can be concluded that the use of IOU can solve the error caused by the occlusion between the illumination and the target during the target tracking process.When the target is occluded or exposed to light, an obstruction is detected or nothing is
-detected. That is, the original target is not detected, and it is assumed that the occlusion is associated with the original target.Then, after the occlusion or illumination ends, because the target IOUs of similar size tend to be large, the correct association can be quickly restored.
+
+Intersection over Union (IoU) is the most popular evaluation metric used in the object detection benchmarks. However, there is a gap between optimizing the commonly used distance losses for regressing the parameters of a bounding box and maximizing this metric value. The optimal objective for a metric is the metric itself. In the case of axisaligned 2D bounding boxes, it can be shown that IoU can be directly used as a regression loss. H
